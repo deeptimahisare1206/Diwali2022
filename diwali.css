@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#47053d 60%, #c031af 60%)
+}
+
+.diya{
+    height: 150px;
+    width: 300px;
+    background-color: rgb(255, 217, 0);
+    border-radius: 0 0 150px 150px;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+}
+.inside{
+    height: 50px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    bottom: 175px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.shadow{
+    height: 50px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #7b246e;
+    /* overflow: hidden; */
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.flame{
+    height: 170px;
+    width: 170px;
+    border-radius:190px 0;
+    background-color: rgb(255, 255, 169);
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: scale-up 3s infinite;
+}
+@keyframes scale-up {
+    50%{
+        transform: rotate(-45deg) scale(1.05);
+        bottom: 42px;
+    }
+    
+}
+
+ .flame:after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius:190px 0;
+    background-color: rgb(255, 233, 31);
+    position: absolute;
+    bottom: 0;
+} 
+
+.light{
+    height: 300px;
+    width: 300px;
+    background-color:#ffabf261;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    
+}
+.light2{
+    height: 100px;
+    width: 100px;
+    background-color:#ffabf2ac;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.5;
+    bottom: 150px;
+    left: 60px;
+
+}
+.dots{
+    height: 50px;
+    width: 320px;
+    border-radius: 50%;
+    border: none;
+    border-bottom: 10px dotted red;
+    position: absolute;
+    bottom: 70px;
+    top: 10;
+    left: -10px;
+    margin: auto;
+}
+
+.strips{
+    height: 50px;
+    width: 320px;
+    border-radius: 50%;
+    border: none;
+    border-bottom: 15px solid red;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    left: -10px;
+    margin: auto;
+}
+
+.strip{
+    height: 50px;
+    width: 320px;
+    border-radius: 50%;
+    border: none;
+    border-bottom: 15px solid red;
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    left: -10px;
+    margin: auto;
+}
+  
+.text{
+    margin: 20px;
+}
+p{
+    font-size: 60px;
+    font-family: cursive;
+    text-align: center;
+    font-weight: bolder;
+    color: #47053d;
+    animation: animate 2s infinite;
+    background: linear-gradient(90deg, rgb(0, 255, 149), rgb(85, 0, 255), red);
+    background-size: 80%;
+    background-clip:border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes animate {
+    0%{
+        color: white;
+        text-shadow:0 0 100px rgb(3, 255, 238);
+        background-position: -500px;
+    }
+
+    100%{
+        color: white;
+        text-shadow:0 0 60px yellow;
+        background-position: 500px;
+    }
+    
+}
